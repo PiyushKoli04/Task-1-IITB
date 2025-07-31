@@ -1,0 +1,82 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+}
+
+/* Headline with Animation */
+.headline {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.wavy {
+  display: inline-block;
+  animation: wave 2s infinite ease-in-out;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Wavy Animation */
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-2deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(2deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(-1deg) scale(1.05);
+  }
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+/* Call to Action Button */
+.cta {
+  padding: 0.8rem 2rem;
+  background-color: #ff00cc;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 0, 204, 0.5);
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e600b8;
+}
